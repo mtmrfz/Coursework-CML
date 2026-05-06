@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центральный Автовокзал - Главная</title>
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="materials/Group 3.png" alt="Логотип">
+                <div class="logo-text">
+                    <span class="logo-title">ЦЕНТРАЛЬНЫЙ АВТОВОКЗАЛ</span>
+                    <span>Ваши путешествия начинаются здесь</span>
+                </div>
+            </div>
+            
+            <button class="burger-menu" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="schedule.html">РАСПИСАНИЕ</a></li>
+                    <li><a href="about.html">О НАС</a></li>
+                    <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                    <li><a href="info.html">ИНФОРМАЦИЯ ПАССАЖИРУ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>КУПИТЬ БИЛЕТЫ<br>НА АВТОБУС ОНЛАЙН</h1>
+                
+                <form class="search-form" id="searchForm">
+                    <div class="form-group">
+                        <label for="from">ОТКУДА</label>
+                        <input type="text" id="from" placeholder="Минск" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="to">КУДА</label>
+                        <input type="text" id="to" placeholder="Гомель" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="date">ДАТА</label>
+                      <input type="date" id="date" required>
+                    </div>
+                <button type="button" class="btn-submit" id="indexSearchBtn">НАЙТИ РЕЙСЫ</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="how-to-buy bg-dark">
+    <div class="container">
+        <h2 class="section-title">Как купить билет?</h2>
+        <div class="steps-grid">
+            <article class="step-card">
+                <div class="icon-wrapper">
+                    <img src="materials/icons8-schedule-100.png" alt="Посмотрите расписание">
+                </div>
+                <h3>1. Посмотрите расписание</h3>
+                <p>Выберите вид транспорта, укажите пункт отправления или прибытия и дату поездки.</p>
+            </article>
+            <article class="step-card">
+                <div class="icon-wrapper">
+                    <img src="materials/icons8-choose-100.png" alt="Выберите рейс">
+                </div>
+                <h3>2. Выберите рейс</h3>
+                <p>Сравните цены, выберите удобное время и место, а также обратите внимание на рейтинг перевозчика.</p>
+            </article>
+            <article class="step-card">
+                <div class="icon-wrapper">
+                    <img src="materials/icons8-boarding-pass-100.png" alt="Купите билет">
+                </div>
+                <h3>3. Купите билет</h3>
+                <p>Внесите данные пассажира, обязательно проверьте информацию и оплатите заказ.</p>
+            </article>
+            <article class="step-card">
+                <div class="icon-wrapper">
+                    <img src="materials/icons8-approval-100.png" alt="Все готово!">
+                </div>
+                <h3>4. Все готово!</h3>
+                <p>Распечатайте или сохраните билет. После путешествия будем рады Вашему отзыву.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+        <section class="advantages bg-dark">
+    <div class="container">
+        <h2 class="section-title">Наши преимущества</h2>
+        <div class="advantages-grid">
+            <article class="adv-card">
+                <div class="icon-wrapper">
+                    <img src="materials/icons8-online-shopping-100.png" alt="Билеты онлайн">
+                </div>
+                <h3>Все билеты доступны онлайн</h3>
+                <p>Больше никаких очередей! Любой билет можно купить на сайте или в нашем мобильном приложении.</p>
+            </article>
+            <article class="adv-card">
+                <div class="icon-wrapper">
+                    <img src="materials/icons8-card-security-100.png" alt="Безопасная оплата">
+                </div>
+                <h3>Безопасная оплата</h3>
+                <p>Все оплаты совершаются через защищенные платежные шлюзы банков, поэтому данные Вашей транзакции надежно защищены.</p>
+            </article>
+            <article class="adv-card">
+                <div class="icon-wrapper">
+                    <img src="materials/icons8-bus-100.png" alt="Комфортабельный транспорт">
+                </div>
+                <h3>Комфортабельный транспорт</h3>
+                <p>Наслаждайтесь дорогой. Комфорт и сервис, которые превратят путь в отдых.</p>
+            </article>
+            <article class="adv-card">
+                <div class="icon-wrapper">
+                    <img src="materials/icons8-gift-100.png" alt="Бонусная программа">
+                </div>
+                <h3>Бонусная программа</h3>
+                <p>Зарегистрируйтесь на сайте и при покупке билетов Вы будете получать бонусы, которыми потом сможете оплачивать свои заказы.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+        <section class="reviews bg-dark">
+            <div class="container">
+                <div class="reviews-header">
+                    <h2 class="section-title">Отзывы пассажиров о перевозчиках</h2>
+                </div>
+                <div class="reviews-grid" id="reviews-container">
+                    </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container subscribe-inner">
+                <div class="subscribe-text">
+                    <h2>Хотите путешествовать дешевле?</h2>
+                    <p>Не пропустите специальные акции, скидки и другие интересные предложения. Подпишитесь на получение новостей и путешествуйте с нами дешевле!</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="E-mail" required>
+                        <button type="submit" class="btn-primary">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="ticketModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModalBtn" aria-label="Закрыть окно">&times;</button>
+            <h2>Оформление билета</h2>
+            <p>Пожалуйста, заполните данные пассажира для выбранного рейса.</p>
+            <form id="purchaseForm">
+                <div class="form-group">
+                    <label for="passengerName">ФИО пассажира</label>
+                    <input type="text" id="passengerName" placeholder="Иванов Иван Иванович" required>
+                </div>
+                <div class="form-group">
+                    <label for="passportData">Серия и номер паспорта</label>
+                    <input type="text" id="passportData" placeholder="AB1234567" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" placeholder="+375 (__) ___-__-__" required>
+                </div>
+                <button type="submit" class="btn-primary btn-full">Перейти к оплате</button>
+            </form>
+        </div>
+    </dialog>
+
+    <dialog id="paymentSuccessModal" class="modal">
+        <div class="modal-content text-center">
+            <button class="close-modal" id="closePaymentSuccessBtn" aria-label="Закрыть окно">&times;</button>
+            <h2>Заявка принята!</h2>
+            <p>Наш оператор свяжется с вами в ближайшее время для подтверждения бронирования и оплаты.</p>
+            <button class="btn-primary btn-full" id="okPaymentSuccessBtn">Отлично</button>
+        </div>
+    </dialog>
+
+    <dialog id="subscribeModal" class="modal">
+        <div class="modal-content text-center">
+            <button class="close-modal" id="closeSubscribeBtn" aria-label="Закрыть окно">&times;</button>
+            <h2>Успешная подписка!</h2>
+            <p>Спасибо! Теперь вы будете первыми узнавать о наших акциях и скидках.</p>
+            <button class="btn-primary btn-full" id="okSubscribeBtn">Отлично</button>
+        </div>
+    </dialog>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-logo">
+                <img src="materials/Group 3.png" alt="Логотип">
+                <span class="footer-title">ЦЕНТРАЛЬНЫЙ АВТОВОКЗАЛ</span>
+            </div> 
+            <div class="footer-contacts">
+                <p>Горячая линия: <span class="fw-bold">+375 (17) 123-45-67</span></p>
+                <p>Адрес: г. Минск, ул. Свердлова 13А</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
