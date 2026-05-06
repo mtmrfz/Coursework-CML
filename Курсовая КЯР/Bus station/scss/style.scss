@@ -1,0 +1,546 @@
+// ==========================================
+// 1. ПЕРЕМЕННЫЕ И МИКСИНЫ
+// ==========================================
+$primary-color: #3B2A5D; // Фиолетовый (кнопки, лого)
+$accent-color: #00A0FF;  // Голубой (акценты, кнопка подписки)
+$bg-dark: #1b2434;       // Темно-синий фон (из дизайна преимуществ)
+$text-dark: #333333;
+$text-light: #ffffff;
+$bg-light: #ffffff;
+$bg-gray: #f5f6f8;
+$border-radius: 12px;
+$transition: all 0.3s ease;
+$font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// ==========================================
+// 2. БАЗОВЫЕ НАСТРОЙКИ (Reset)
+// ==========================================
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  color: $text-dark;
+  background-color: $bg-light;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: $transition;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+// Общие стили для кнопок
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: $transition;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: $text-light;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: $text-light; // По умолчанию для темных блоков
+}
+
+// Класс для темных секций
+.bg-dark {
+  background-color: $bg-dark;
+  color: $text-light;
+  padding: 60px 0;
+}
+
+// ==========================================
+// 3. ШАПКА САЙТА (Header)
+// ==========================================
+.header {
+  background: $bg-light;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .header-inner {
+    @include flex-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    // ДОБАВИТЬ ЭТО:
+    img {
+      width: 45px; // Ширина логотипа (подбери под свои пропорции)
+      height: auto; // Высота подстроится автоматически, чтобы не сплющить картинку
+      object-fit: contain;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+
+      .logo-title {
+        font-weight: bold;
+        font-size: 18px;
+        color: $text-dark;
+        line-height: 1.2;
+      }
+
+      span {
+        font-size: 12px;
+        color: #777777; // Делаем цвет слогана более приглушенным
+      }
+    }
+  }
+
+  .main-nav ul {
+    display: flex;
+    gap: 30px;
+
+    a {
+      font-size: 14px;
+      font-weight: 600;
+      color: $text-dark;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 101;
+
+    span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: $text-dark;
+      transition: $transition;
+    }
+
+    &.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    &.active span:nth-child(2) { opacity: 0; }
+    &.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+  }
+
+  @media (max-width: 900px) {
+    .burger-menu { display: flex; }
+    .main-nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+      padding: 20px 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: $transition;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+// ==========================================
+// 4. ГЛАВНЫЙ ЭКРАН И ФОРМА (Hero)
+// ==========================================
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../materials/background_for_index.png') center/cover;
+  padding: 100px 0;
+  text-align: center;
+  color: $text-light;
+
+  h1 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+}
+
+.search-form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px 25px;
+    border-radius: 12px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-end; // Выравнивает инпуты и кнопку по нижнему краю
+    max-width: 850px; // Чуть сузили, так как убрали одно поле
+    margin: 0 auto;
+    color: #333;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); // Добавил легкую тень для объема
+
+    .form-group {
+      flex: 1; // Поля занимают равное пространство
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      label {
+        font-size: 12px;
+        font-weight: 600;
+        color: #555;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: $primary-color;
+        }
+      }
+    }
+
+    .btn-submit {
+      background-color: $primary-color;
+      color: $text-light;
+      padding: 0 30px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 16px;
+      height: 47px; // Идеально совпадает с высотой инпутов
+      white-space: nowrap; // Чтобы текст "НАЙТИ РЕЙСЫ" не переносился на новую строку
+      
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+// Адаптивность формы для мобильных
+@media (max-width: 768px) {
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+
+    .btn-submit { 
+      height: 50px; 
+      margin-top: 10px; 
+    }
+  }
+}
+
+// ==========================================
+// 5. СЕТКА КАРТОЧЕК (Общие стили для 3 секций)
+// ==========================================
+// Используем CSS Grid для автоматического переноса колонок
+.steps-grid, .advantages-grid, .reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+// Карточки в секциях "Как купить" и "Преимущества"
+.step-card, .adv-card {
+  background: $bg-light;
+  color: $text-dark;
+  padding: 25px;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+  .icon-wrapper {
+    margin-bottom: 20px;
+    display: flex; // Добавим flex, чтобы иконка аккуратно стояла
+    
+    img {
+      width: 50px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+  }
+
+  // ... (остальной код) ...
+}
+
+// ==========================================
+// 6. ОТЗЫВЫ (Специфичные стили)
+// ==========================================
+.reviews-header {
+  @include flex-between;
+  margin-bottom: 30px;
+
+  .section-title { margin-bottom: 0; }
+  
+  .icon-wrapper {
+    margin-bottom: 20px;
+    display: flex; // Добавим flex, чтобы иконка аккуратно стояла
+    
+    // ВСТАВИТЬ ЭТОТ БЛОК:
+    img {
+      width: 100px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+// Стили для будущих карточек отзывов (которые сгенерирует JS)
+.review-card {
+  background: $bg-light;
+  color: $text-dark;
+  padding: 20px;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: $accent-color;
+      color: #fff;
+      @include flex-center;
+      font-weight: bold;
+    }
+    .author-info {
+      .author-name { display: block; font-size: 16px; font-weight: bold; }
+      span { font-size: 12px; color: #888; }
+    }
+  }
+
+  .review-text {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
+    flex-grow: 1; // Растягивает текст, чтобы подвал отзыва был всегда внизу
+  }
+
+  .rating { color: #f39c12; font-weight: bold; }
+}
+
+// ==========================================
+// 7. ПОДПИСКА
+// ==========================================
+.subscribe {
+  padding: 60px 0;
+  background-color: $bg-gray;
+
+  .subscribe-inner {
+    @include flex-between;
+    background: $bg-light;
+    padding: 40px;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    gap: 40px;
+  }
+
+  .subscribe-text {
+    flex: 1;
+    
+    h2 { font-size: 28px; margin-bottom: 15px; }
+    p { color: #666; margin-bottom: 25px; }
+
+    .subscribe-form {
+      display: flex;
+      gap: 10px;
+
+      input {
+        flex: 1;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        outline: none;
+      }
+
+    }
+  }
+
+  @media (max-width: 768px) {
+    .subscribe-inner { flex-direction: column; text-align: center; }
+    .subscribe-form { flex-direction: column; }
+  }
+}
+
+// ==========================================
+// 8. МОДАЛЬНОЕ ОКНО (Dialog HTML5)
+// ==========================================
+.modal {
+  margin: auto; // Центрирует диалог
+  padding: 0;
+  border: none;
+  border-radius: $border-radius;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  max-width: 400px;
+  width: 90%;
+
+  // Псевдоэлемент для затемнения фона
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+  }
+
+  .modal-content {
+    padding: 30px;
+    position: relative;
+
+    h2 { margin-bottom: 10px; color: $primary-color; }
+    p { font-size: 14px; color: #666; margin-bottom: 20px; }
+
+    .close-modal {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: none;
+      font-size: 24px;
+      color: #999;
+      &:hover { color: #333; }
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      label { font-size: 13px; font-weight: 600; }
+      input,
+      select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background-color: #fff;
+        font-family: inherit;
+      }
+    }
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .btn-full {
+    width: 100%;
+  }
+}
+
+// ==========================================
+// 9. ПОДВАЛ (Footer)
+// ==========================================
+.footer {
+  background-color: $bg-gray;
+  padding: 30px 0;
+  border-top: 1px solid #eaeaea;
+
+  .footer-inner {
+    @include flex-between;
+    flex-wrap: wrap; // Для переноса на мобильных
+    gap: 20px;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    // ДОБАВИТЬ ЭТО:
+    img {
+      width: 35px; // Логотип в подвале обычно чуть меньше
+      height: auto;
+      object-fit: contain;
+    }
+    
+    // ...
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    a { font-size: 14px; color: #555; &:hover { color: $primary-color; } }
+  }
+
+  .footer-contacts {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+    .fw-bold { color: $text-dark; font-weight: bold; }
+  }
+
+  @media (max-width: 768px) {
+    .footer-inner { flex-direction: column; text-align: center; align-items: center; }
+    .footer-contacts { text-align: center; }
+  }
+}

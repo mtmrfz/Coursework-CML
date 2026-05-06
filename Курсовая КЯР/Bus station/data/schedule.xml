@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule>
+    <route>
+        <id>101</id>
+        <departure>Минск</departure>
+        <arrival>Брест</arrival>
+        <time_start>08:00</time_start>
+        <time_end>12:30</time_end>
+        <duration>4 ч 30 мин</duration>
+        <price>45 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>102</id>
+        <departure>Минск</departure>
+        <arrival>Гомель</arrival>
+        <time_start>10:00</time_start>
+        <time_end>14:30</time_end>
+        <duration>4 ч 30 мин</duration>
+        <price>35 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>103</id>
+        <departure>Брест</departure>
+        <arrival>Минск</arrival>
+        <time_start>15:00</time_start>
+        <time_end>19:30</time_end>
+        <duration>4 ч 30 мин</duration>
+        <price>45 BYN</price>
+        <bus_type>Туристический лайнер</bus_type>
+    </route>
+
+    <route>
+        <id>104</id>
+        <departure>Минск</departure>
+        <arrival>Витебск</arrival>
+        <time_start>14:30</time_start>
+        <time_end>18:45</time_end>
+        <duration>4 ч 15 мин</duration>
+        <price>30 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>105</id>
+        <departure>Гомель</departure>
+        <arrival>Минск</arrival>
+        <time_start>09:00</time_start>
+        <time_end>13:30</time_end>
+        <duration>4 ч 30 мин</duration>
+        <price>35 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>106</id>
+        <departure>Минск</departure>
+        <arrival>Гродно</arrival>
+        <time_start>07:30</time_start>
+        <time_end>11:45</time_end>
+        <duration>4 ч 15 мин</duration>
+        <price>40 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>107</id>
+        <departure>Гродно</departure>
+        <arrival>Минск</arrival>
+        <time_start>13:00</time_start>
+        <time_end>17:15</time_end>
+        <duration>4 ч 15 мин</duration>
+        <price>40 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>108</id>
+        <departure>Минск</departure>
+        <arrival>Могилев</arrival>
+        <time_start>08:15</time_start>
+        <time_end>11:15</time_end>
+        <duration>3 ч 00 мин</duration>
+        <price>25 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>109</id>
+        <departure>Могилев</departure>
+        <arrival>Минск</arrival>
+        <time_start>12:30</time_start>
+        <time_end>15:30</time_end>
+        <duration>3 ч 00 мин</duration>
+        <price>25 BYN</price>
+        <bus_type>Туристический лайнер</bus_type>
+    </route>
+
+    <route>
+        <id>110</id>
+        <departure>Минск</departure>
+        <arrival>Пинск</arrival>
+        <time_start>16:00</time_start>
+        <time_end>20:30</time_end>
+        <duration>4 ч 30 мин</duration>
+        <price>35 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>111</id>
+        <departure>Пинск</departure>
+        <arrival>Минск</arrival>
+        <time_start>06:30</time_start>
+        <time_end>11:00</time_end>
+        <duration>4 ч 30 мин</duration>
+        <price>35 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>112</id>
+        <departure>Витебск</departure>
+        <arrival>Полоцк</arrival>
+        <time_start>09:00</time_start>
+        <time_end>10:45</time_end>
+        <duration>1 ч 45 мин</duration>
+        <price>15 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>113</id>
+        <departure>Брест</departure>
+        <arrival>Пинск</arrival>
+        <time_start>14:00</time_start>
+        <time_end>17:00</time_end>
+        <duration>3 ч 00 мин</duration>
+        <price>20 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>114</id>
+        <departure>Гомель</departure>
+        <arrival>Мозырь</arrival>
+        <time_start>11:15</time_start>
+        <time_end>13:45</time_end>
+        <duration>2 ч 30 мин</duration>
+        <price>18 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>115</id>
+        <departure>Минск</departure>
+        <arrival>Бобруйск</arrival>
+        <time_start>10:30</time_start>
+        <time_end>12:30</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>15 BYN</price>
+        <bus_type>Туристический лайнер</bus_type>
+    </route>
+
+    <route>
+        <id>116</id>
+        <departure>Минск</departure>
+        <arrival>Барановичи</arrival>
+        <time_start>18:00</time_start>
+        <time_end>20:00</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>15 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>117</id>
+        <departure>Гродно</departure>
+        <arrival>Лида</arrival>
+        <time_start>08:30</time_start>
+        <time_end>10:20</time_end>
+        <duration>1 ч 50 мин</duration>
+        <price>12 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>118</id>
+        <departure>Могилев</departure>
+        <arrival>Бобруйск</arrival>
+        <time_start>15:45</time_start>
+        <time_end>17:55</time_end>
+        <duration>2 ч 10 мин</duration>
+        <price>16 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>119</id>
+        <departure>Минск</departure>
+        <arrival>Орша</arrival>
+        <time_start>17:30</time_start>
+        <time_end>20:45</time_end>
+        <duration>3 ч 15 мин</duration>
+        <price>22 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>120</id>
+        <departure>Минск</departure>
+        <arrival>Борисов</arrival>
+        <time_start>19:00</time_start>
+        <time_end>20:15</time_end>
+        <duration>1 ч 15 мин</duration>
+        <price>10 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>121</id>
+        <departure>Минск</departure>
+        <arrival>Солигорск</arrival>
+        <time_start>10:00</time_start>
+        <time_end>12:30</time_end>
+        <duration>2 ч 30 мин</duration>
+        <price>15 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>122</id>
+        <departure>Солигорск</departure>
+        <arrival>Минск</arrival>
+        <time_start>14:00</time_start>
+        <time_end>16:30</time_end>
+        <duration>2 ч 30 мин</duration>
+        <price>15 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>123</id>
+        <departure>Гомель</departure>
+        <arrival>Витебск</arrival>
+        <time_start>07:00</time_start>
+        <time_end>13:00</time_end>
+        <duration>6 ч 00 мин</duration>
+        <price>45 BYN</price>
+        <bus_type>Туристический лайнер</bus_type>
+    </route>
+
+    <route>
+        <id>124</id>
+        <departure>Витебск</departure>
+        <arrival>Гомель</arrival>
+        <time_start>15:00</time_start>
+        <time_end>21:00</time_end>
+        <duration>6 ч 00 мин</duration>
+        <price>45 BYN</price>
+        <bus_type>Туристический лайнер</bus_type>
+    </route>
+
+    <route>
+        <id>125</id>
+        <departure>Гродно</departure>
+        <arrival>Брест</arrival>
+        <time_start>08:30</time_start>
+        <time_end>12:30</time_end>
+        <duration>4 ч 00 мин</duration>
+        <price>30 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>126</id>
+        <departure>Брест</departure>
+        <arrival>Гродно</arrival>
+        <time_start>14:30</time_start>
+        <time_end>18:30</time_end>
+        <duration>4 ч 00 мин</duration>
+        <price>30 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>127</id>
+        <departure>Минск</departure>
+        <arrival>Слуцк</arrival>
+        <time_start>09:15</time_start>
+        <time_end>11:15</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>12 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>128</id>
+        <departure>Слуцк</departure>
+        <arrival>Минск</arrival>
+        <time_start>13:15</time_start>
+        <time_end>15:15</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>12 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>129</id>
+        <departure>Могилев</departure>
+        <arrival>Витебск</arrival>
+        <time_start>10:45</time_start>
+        <time_end>13:15</time_end>
+        <duration>2 ч 30 мин</duration>
+        <price>20 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>130</id>
+        <departure>Витебск</departure>
+        <arrival>Могилев</arrival>
+        <time_start>16:00</time_start>
+        <time_end>18:30</time_end>
+        <duration>2 ч 30 мин</duration>
+        <price>20 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>131</id>
+        <departure>Минск</departure>
+        <arrival>Молодечно</arrival>
+        <time_start>08:00</time_start>
+        <time_end>09:30</time_end>
+        <duration>1 ч 30 мин</duration>
+        <price>10 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>132</id>
+        <departure>Молодечно</departure>
+        <arrival>Минск</arrival>
+        <time_start>11:00</time_start>
+        <time_end>12:30</time_end>
+        <duration>1 ч 30 мин</duration>
+        <price>10 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>133</id>
+        <departure>Минск</departure>
+        <arrival>Жлобин</arrival>
+        <time_start>14:20</time_start>
+        <time_end>17:20</time_end>
+        <duration>3 ч 00 мин</duration>
+        <price>22 BYN</price>
+        <bus_type>Туристический лайнер</bus_type>
+    </route>
+
+    <route>
+        <id>134</id>
+        <departure>Жлобин</departure>
+        <arrival>Минск</arrival>
+        <time_start>18:00</time_start>
+        <time_end>21:00</time_end>
+        <duration>3 ч 00 мин</duration>
+        <price>22 BYN</price>
+        <bus_type>Туристический лайнер</bus_type>
+    </route>
+
+    <route>
+        <id>135</id>
+        <departure>Гомель</departure>
+        <arrival>Светлогорск</arrival>
+        <time_start>09:00</time_start>
+        <time_end>11:00</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>14 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>136</id>
+        <departure>Светлогорск</departure>
+        <arrival>Гомель</arrival>
+        <time_start>13:00</time_start>
+        <time_end>15:00</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>14 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>137</id>
+        <departure>Брест</departure>
+        <arrival>Пинск</arrival>
+        <time_start>07:30</time_start>
+        <time_end>10:30</time_end>
+        <duration>3 ч 00 мин</duration>
+        <price>20 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>138</id>
+        <departure>Пинск</departure>
+        <arrival>Брест</arrival>
+        <time_start>17:30</time_start>
+        <time_end>20:30</time_end>
+        <duration>3 ч 00 мин</duration>
+        <price>20 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>139</id>
+        <departure>Минск</departure>
+        <arrival>Новополоцк</arrival>
+        <time_start>15:30</time_start>
+        <time_end>19:30</time_end>
+        <duration>4 ч 00 мин</duration>
+        <price>35 BYN</price>
+        <bus_type>Туристический лайнер</bus_type>
+    </route>
+
+    <route>
+        <id>140</id>
+        <departure>Новополоцк</departure>
+        <arrival>Минск</arrival>
+        <time_start>06:30</time_start>
+        <time_end>10:30</time_end>
+        <duration>4 ч 00 мин</duration>
+        <price>35 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>141</id>
+        <departure>Минск</departure>
+        <arrival>Речица</arrival>
+        <time_start>12:00</time_start>
+        <time_end>16:30</time_end>
+        <duration>4 ч 30 мин</duration>
+        <price>32 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>142</id>
+        <departure>Речица</departure>
+        <arrival>Минск</arrival>
+        <time_start>07:00</time_start>
+        <time_end>11:30</time_end>
+        <duration>4 ч 30 мин</duration>
+        <price>32 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>143</id>
+        <departure>Гродно</departure>
+        <arrival>Слоним</arrival>
+        <time_start>10:15</time_start>
+        <time_end>12:15</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>15 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>144</id>
+        <departure>Слоним</departure>
+        <arrival>Гродно</arrival>
+        <time_start>15:15</time_start>
+        <time_end>17:15</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>15 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>145</id>
+        <departure>Брест</departure>
+        <arrival>Кобрин</arrival>
+        <time_start>08:00</time_start>
+        <time_end>09:00</time_end>
+        <duration>1 ч 00 мин</duration>
+        <price>8 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>146</id>
+        <departure>Кобрин</departure>
+        <arrival>Брест</arrival>
+        <time_start>18:00</time_start>
+        <time_end>19:00</time_end>
+        <duration>1 ч 00 мин</duration>
+        <price>8 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>147</id>
+        <departure>Гродно</departure>
+        <arrival>Волковыск</arrival>
+        <time_start>11:30</time_start>
+        <time_end>13:00</time_end>
+        <duration>1 ч 30 мин</duration>
+        <price>12 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>148</id>
+        <departure>Волковыск</departure>
+        <arrival>Гродно</arrival>
+        <time_start>16:30</time_start>
+        <time_end>18:00</time_end>
+        <duration>1 ч 30 мин</duration>
+        <price>12 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>149</id>
+        <departure>Минск</departure>
+        <arrival>Жодино</arrival>
+        <time_start>09:00</time_start>
+        <time_end>10:00</time_end>
+        <duration>1 ч 00 мин</duration>
+        <price>7 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>150</id>
+        <departure>Жодино</departure>
+        <arrival>Минск</arrival>
+        <time_start>19:00</time_start>
+        <time_end>20:00</time_end>
+        <duration>1 ч 00 мин</duration>
+        <price>7 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>151</id>
+        <departure>Гомель</departure>
+        <arrival>Речица</arrival>
+        <time_start>14:00</time_start>
+        <time_end>15:00</time_end>
+        <duration>1 ч 00 мин</duration>
+        <price>6 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>152</id>
+        <departure>Речица</departure>
+        <arrival>Гомель</arrival>
+        <time_start>08:00</time_start>
+        <time_end>09:00</time_end>
+        <duration>1 ч 00 мин</duration>
+        <price>6 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>153</id>
+        <departure>Витебск</departure>
+        <arrival>Орша</arrival>
+        <time_start>12:30</time_start>
+        <time_end>13:45</time_end>
+        <duration>1 ч 15 мин</duration>
+        <price>10 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>154</id>
+        <departure>Орша</departure>
+        <arrival>Витебск</arrival>
+        <time_start>17:30</time_start>
+        <time_end>18:45</time_end>
+        <duration>1 ч 15 мин</duration>
+        <price>10 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>155</id>
+        <departure>Минск</departure>
+        <arrival>Сморгонь</arrival>
+        <time_start>10:00</time_start>
+        <time_end>12:00</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>15 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>156</id>
+        <departure>Сморгонь</departure>
+        <arrival>Минск</arrival>
+        <time_start>14:00</time_start>
+        <time_end>16:00</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>15 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>157</id>
+        <departure>Могилев</departure>
+        <arrival>Бобруйск</arrival>
+        <time_start>08:45</time_start>
+        <time_end>10:45</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>14 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>158</id>
+        <departure>Бобруйск</departure>
+        <arrival>Могилев</arrival>
+        <time_start>13:45</time_start>
+        <time_end>15:45</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>14 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>159</id>
+        <departure>Брест</departure>
+        <arrival>Барановичи</arrival>
+        <time_start>09:30</time_start>
+        <time_end>12:00</time_end>
+        <duration>2 ч 30 мин</duration>
+        <price>18 BYN</price>
+        <bus_type>Туристический лайнер</bus_type>
+    </route>
+
+    <route>
+        <id>160</id>
+        <departure>Барановичи</departure>
+        <arrival>Брест</arrival>
+        <time_start>16:30</time_start>
+        <time_end>19:00</time_end>
+        <duration>2 ч 30 мин</duration>
+        <price>18 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>161</id>
+        <departure>Минск</departure>
+        <arrival>Несвиж</arrival>
+        <time_start>08:30</time_start>
+        <time_end>10:30</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>16 BYN</price>
+        <bus_type>Туристический лайнер</bus_type>
+    </route>
+
+    <route>
+        <id>162</id>
+        <departure>Несвиж</departure>
+        <arrival>Минск</arrival>
+        <time_start>15:30</time_start>
+        <time_end>17:30</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>16 BYN</price>
+        <bus_type>Туристический лайнер</bus_type>
+    </route>
+
+    <route>
+        <id>163</id>
+        <departure>Минск</departure>
+        <arrival>Дзержинск</arrival>
+        <time_start>11:00</time_start>
+        <time_end>12:00</time_end>
+        <duration>1 ч 00 мин</duration>
+        <price>8 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>164</id>
+        <departure>Дзержинск</departure>
+        <arrival>Минск</arrival>
+        <time_start>17:00</time_start>
+        <time_end>18:00</time_end>
+        <duration>1 ч 00 мин</duration>
+        <price>8 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>165</id>
+        <departure>Гродно</departure>
+        <arrival>Лида</arrival>
+        <time_start>07:45</time_start>
+        <time_end>09:45</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>14 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>166</id>
+        <departure>Лида</departure>
+        <arrival>Гродно</arrival>
+        <time_start>18:45</time_start>
+        <time_end>20:45</time_end>
+        <duration>2 ч 00 мин</duration>
+        <price>14 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>167</id>
+        <departure>Минск</departure>
+        <arrival>Полоцк</arrival>
+        <time_start>13:00</time_start>
+        <time_end>17:00</time_end>
+        <duration>4 ч 00 мин</duration>
+        <price>30 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>168</id>
+        <departure>Полоцк</departure>
+        <arrival>Минск</arrival>
+        <time_start>08:00</time_start>
+        <time_end>12:00</time_end>
+        <duration>4 ч 00 мин</duration>
+        <price>30 BYN</price>
+        <bus_type>Бизнес-класс</bus_type>
+    </route>
+
+    <route>
+        <id>169</id>
+        <departure>Минск</departure>
+        <arrival>Марьина Горка</arrival>
+        <time_start>10:30</time_start>
+        <time_end>11:30</time_end>
+        <duration>1 ч 00 мин</duration>
+        <price>7 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+
+    <route>
+        <id>170</id>
+        <departure>Марьина Горка</departure>
+        <arrival>Минск</arrival>
+        <time_start>16:30</time_start>
+        <time_end>17:30</time_end>
+        <duration>1 ч 00 мин</duration>
+        <price>7 BYN</price>
+        <bus_type>Эконом</bus_type>
+    </route>
+</schedule>
